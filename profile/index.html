@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Moubillixyz - Profile</title>
+		<link rel="manifest" href="../manifest.json" />
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <script src="./index.js"></script>
+	</head>
+	<body class="bg-black text-white" x-cloak x-data >
+		<h1 class="text-4xl text-center my-8">Profile</h1>
+		<p>
+			Hello <span x-text="$store.profile.data.name"></span> !
+		</p>
+
+    name: <input label="name" type="text" x-model="$store.profile.data.name">
+
+    <button x-on:click="$store.profile.save()">Save</button>
+	</body>
+</html>

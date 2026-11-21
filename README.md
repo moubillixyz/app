@@ -14,3 +14,7 @@ Web/Mobile app of the Mouton / Cabillic family.
 
 - [Alpine.js](https://alpinejs.dev/)
 - [tailwindcss](https://tailwindcss.com/)
+
+## Run locally
+
+```python3 -m http.server 8000```

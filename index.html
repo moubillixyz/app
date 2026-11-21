@@ -2,11 +2,28 @@
 	<head>
 		<title>Moubillixyz - App</title>
 		<link rel="manifest" href="manifest.json" />
+		<link rel="icon" href="favicon.ico" sizes="any" />
+		<link rel="apple-touch-icon" href="icon-192x192.png" />
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<script src="https://unpkg.com/alpinejs" defer></script>
+    <script src="./profile/index.js"></script>
 	</head>
-	<body>
-		<h1>Moubillixyz - App</h1>
-		<p>
-			Hello !
+	<body class="bg-black text-white text-center">
+		<h1 class="text-6xl my-8">Moubillixyz - App</h1>
+		<p class="text-xl my-8" x-data>
+			Wesh <span x-text="$store.profile.data.name">
 		</p>
+		<h2 class="text-4xl my-6">Parameters</h2>
+		<ul>
+			<li>
+				<a href="./profile/">Profile</a>
+			</li>
+		<ul>
+		<h2 class="text-4xl my-6">Fonctionnalités</h2>
+		<ul>
+			<li>
+				<a href="./tuner/">Tuner</a>
+			</li>
+		<ul>
 	</body>
 </html>
